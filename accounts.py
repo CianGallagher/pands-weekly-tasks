@@ -1,10 +1,11 @@
 # Weekly task 03
 # Author Cian Gallagher
 # Accounts program taking a 10 digit account number from the user and printing the banking standard redacted output.
+# Account number inputs with fewer than 5 length will not be redacted as these would fall outside typical banking standards.
 
 def account_number_redacted(accountNumberUserInput):
 
-    # Change all digits to X apart from the final 4 using the users input length.
+    # Change all digits to X apart from the final 4 using the users input length. 
     redactedOutput = 'X' * (len(accountNumberUserInput) - 4) + accountNumberUserInput[-4:]
 
     # Print the redacted account number
