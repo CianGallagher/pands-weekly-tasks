@@ -12,9 +12,10 @@ normData = np.random.normal(5, 2, 1000)
 plt.hist(normData, bins = 50, color = 'whitesmoke', edgecolor = 'midnightblue', label='Normal Distribution')
 
 # Plotting h(x) = x^3 function
-xpoints = np.linspace(0, 10, 10)
+# Linspacemethod was used to restrict the space afforded to the function.
+xpoints = np.linspace(0, 10)
 ypoints = xpoints ** 3 # y equals x cubed
-plt.plot(xpoints, ypoints, color = 'green', label = 'h(x) = x^3' )
+plt.plot(xpoints, ypoints, color = 'seagreen', label = 'h(x) = x^3' )
 
 plt.xlabel('Values')
 plt.ylabel('Frequency')
